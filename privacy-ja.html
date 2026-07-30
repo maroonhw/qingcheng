@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー · Amblo</title>
+<style>
+:root{--accent:#3a8f5f;--accent-deep:#2c6b47;--bg:#fff;--fg:#1c1c1e;--muted:#6b6b70;--card:#f5f6f5;--border:#e5e6e5}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1110;--fg:#ececec;--muted:#9a9a9f;--card:#1a1d1b;--border:#2a2d2b;--accent:#5fb583;--accent-deep:#8fd0a8}}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Helvetica Neue",Arial,sans-serif;line-height:1.75;color:var(--fg);background:var(--bg);-webkit-text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+header.site{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.logo{width:34px;height:34px;border-radius:8px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+h1{font-size:1.55rem;margin:.3em 0}
+h2{font-size:1.12rem;margin:1.8em 0 .35em;color:var(--accent-deep)}
+.updated{color:var(--muted);font-size:.85rem;margin-bottom:1em}
+p,li{margin:.5em 0}
+a{color:var(--accent-deep)}
+hr{border:none;border-top:1px solid var(--border);margin:1.4em 0}
+ul{padding-left:1.25em}
+footer{margin-top:48px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);padding-top:16px}
+footer a{margin-right:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site"><div class="logo">A</div><strong>Amblo</strong></header>
+<h1>プライバシーポリシー</h1>
+<p class="updated">最終更新日：2026年6月8日 · <a href="privacy.html">中文</a> · <a href="privacy-en.html">English</a></p>
+<hr>
+
+<h2>1. お客様の情報を一切収集しません</h2>
+<p>「Amblo」はローカルで動作するユーティリティアプリです。すべてのデータ（目的地、立ち寄り先、持ち物リスト、予定日、メモ、写真など）は、お客様ご自身のデバイス上のローカルデータベース（SwiftData）にのみ保存されます。</p>
+<p>当社は、氏名、電話番号、メールアドレス、デバイス ID、広告 ID、位置情報、連絡先、写真ライブラリ、マイク、カメラなど、いかなる情報も収集しません。アカウント制度もなく、登録やサインインは不要です。</p>
+
+<h2>2. デバイス上に保存し、アップロードしません</h2>
+<p>アプリ内で入力・保存したすべての内容は、デバイス上の SwiftData データベースとアプリのサンドボックスファイル内にのみ保存されます。ネットワーク経由で当社に送信されることはなく、開発者のサーバーやクラウドバックアップも存在しません。</p>
+<p>唯一の例外は場所の検索です。名前を入力すると、そのキーワードが候補地を検索するために Apple マップ（MapKit）へ送信されます（第 3 条を参照）。それ以外にネットワークを使用する機能はありません。写真がエクスポートファイルとともにデバイスの外へ出ることはありません。デバイスを乗り換える場合は、システムの写真ライブラリに原本を保管してください。</p>
+<p>アプリをアンインストールすると、iOS がデバイス上のすべてのデータを自動的に削除します。</p>
+
+<h2>3. 第三者サービス</h2>
+<p>本アプリが利用する唯一の第三者サービスは Apple マップ（MapKit）の場所検索で、以下の場合にのみ使用されます：</p>
+<ul>
+<li>「目的地を追加」「立ち寄り先を追加」の際に名前を入力すると、入力したキーワード（個人を特定できる情報は含みません）を Apple に送信し、候補地の一覧とその座標を取得します。</li>
+<li>名前を入力しない場合や候補を使用しない場合は、ネットワークリクエストは一切行われません。</li>
+<li>本アプリは Apple に対して、デバイス識別子、ユーザー識別子、位置情報などを一切送信しません。</li>
+</ul>
+<p>Apple のプライバシーポリシーは <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a> をご覧ください。</p>
+
+<h2>4. 権限について</h2>
+<p>本アプリは、以下の機能をお客様が実際に使用するときにのみ、対応する権限を要求します：</p>
+<ul>
+<li><strong>カレンダー（書き込み）：</strong>「カレンダーに追加」をタップすると、現在の旅行が終日イベントとして選択したカレンダーに書き込まれます。書き込みのみで、読み取りは行いません。</li>
+<li><strong>通知（ローカル）：</strong>設定で「出発リマインダー」をオンにすると、出発日の前日 20:00 と当日 08:00 にローカル通知を各 1 回送信します。すべての通知はデバイス上でスケジュールされ、サーバーを経由することはありません。</li>
+<li><strong>写真ライブラリ（写真の追加）：</strong>目的地の「写真を追加」をタップすると、システムの PhotosPicker で写真を選択します。本アプリはライブラリ全体を読み取ることはなく、選択した画像のコピーのみを取得します。</li>
+</ul>
+<p>これらの権限は「システム設定 → プライバシーとセキュリティ」でいつでも取り消せます。取り消すと該当機能は使用できなくなりますが、他の機能には影響しません。</p>
+
+<h2>5. データセキュリティ</h2>
+<p>お客様のデータは iOS アプリのサンドボックスに保存され、iOS のシステムレベルのファイル保護によって守られます。デバイスとそのパスコード / 生体認証情報を安全に管理してください。</p>
+
+<h2>6. 未成年者</h2>
+<p>本アプリは 14 歳未満の子供を対象として設計されておらず、子供からいかなる情報も収集しません。</p>
+
+<h2>7. ポリシーの更新</h2>
+<p>当社は本プライバシーポリシーを更新することがあり、更新後はアプリ内で同時に公開します。重要な変更はリリースノートなどの方法でお知らせします。本アプリの継続的なご利用は、最新版への同意とみなされます。</p>
+
+<h2>8. お問い合わせ</h2>
+<p>ご質問、苦情、ご提案がございましたら、メールでお問い合わせください：<a href="mailto:sealmateapp@163.com">sealmateapp@163.com</a></p>
+
+<footer>
+<a href="index-ja.html">ホーム</a><a href="support-ja.html">サポート</a><a href="terms-ja.html">利用規約</a><a href="privacy.html">中文</a><a href="privacy-en.html">English</a>
+<div>© 2026 Amblo</div>
+</footer>
+</div>
+</body>
+</html>
